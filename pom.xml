@@ -6,7 +6,7 @@
 
   <groupId>org.ditacommunity.xml</groupId>
   <artifactId>grammarpool-parser-factory</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.9.0-SNAPSHOT</version>
 
   <name>grammarpool-parser-factory</name>
   <url>https://github.com/dita-community/grammarpool-parser-factory</url>
