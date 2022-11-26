@@ -22,6 +22,11 @@ public class TestGrammarPoolUsingSAXParserFactory {
 
     @Test
     public void getParser() throws Exception {
+        URL catalogURL = this.getClass().getClassLoader().getResource("catalog-dita.xml");
+        URL topicURL = this.getClass().getClassLoader().getResource("topics/test-topic.dita");
+
+        System.setProperty("xmlcatalogs", catalogURL.toExternalForm());
+
         GrammarPoolUsingSAXParserFactory factory = (GrammarPoolUsingSAXParserFactory)GrammarPoolUsingSAXParserFactory.newInstance();
         assertNotNull("Expected a factory instance", factory);
         SAXParser parser = factory.newSAXParser();
@@ -33,7 +38,6 @@ public class TestGrammarPoolUsingSAXParserFactory {
 
         Object resolver = parser.getXMLReader().getEntityResolver();
         assertNotNull("Expected a resolver", resolver);
-        URL topicURL = this.getClass().getClassLoader().getResource("topics/test-topic.dita");
         String url = topicURL.toExternalForm();
 
         DefaultHandler handler = new DefaultHandler();
