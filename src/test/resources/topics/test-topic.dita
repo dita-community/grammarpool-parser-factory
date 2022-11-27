@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="test-topic">
+ <title>Test Topic</title>
+ <shortdesc>Test parsing of topics</shortdesc>
+ <prolog>
+  <author>DITA Community</author>
+  <critdates>
+   <created date="2022-11-04T16:22:59-05:00"/>
+   <revised modified="2022-11-04"/>
+  </critdates>
+  <metadata>
+   <keywords/>
+  </metadata>
+ </prolog>
+ <conbody>
+    <p>No useful content.</p>
+  </conbody>
+</concept>
